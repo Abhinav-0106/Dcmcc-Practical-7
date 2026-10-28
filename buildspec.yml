@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Preparing build environment"
+
+  build:
+    commands:
+      - echo "Testing HTML file"
+      - test -f index.html
+      - echo "Build successful"
+
+artifacts:
+  files:
+    - index.html
